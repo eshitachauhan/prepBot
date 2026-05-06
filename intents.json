@@ -1,0 +1,239 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hi",
+        "hello",
+        "hey",
+        "hii",
+        "yo",
+        "hey there",
+        "good morning",
+        "good evening",
+        "hi there",
+        "hello bro",
+        "hey bro",
+        "anyone there?",
+        "hi bot",
+        "hiii",
+        "hello assistant",
+        "is anyone online?",
+        "greetings",
+        "hi team",
+        "what's up bot",
+        "hello hello"
+      ],
+      "responses": [
+        "Hey! How can I help you with your placement preparation today?",
+        "Hi there! Ready to crush those interviews?",
+        "Hello! I'm your placement assistant. What's on your mind?"
+      ]
+    },
+    {
+      "tag": "small_talk",
+      "patterns": [
+        "how are you",
+        "how are you doing",
+        "how is it going",
+        "what is up",
+        "whats up",
+        "what's up",
+        "are you there",
+        "sup",
+        "how r you",
+        "hru",
+        "are you fine",
+        "kaise ho",
+        "how's life",
+        "you good?",
+        "everything okay?",
+        "hope you are doing well",
+        "what are you doing"
+      ],
+      "responses": [
+        "I'm just a bot, but I'm powered up to help you get placed!",
+        "All good! Feeling ready to help you crack some companies.",
+        "Doing great! Ready when you are."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "bye",
+        "goodbye",
+        "see you",
+        "exit",
+        "quit",
+        "thanks bye",
+        "tata",
+        "close",
+        "I am done",
+        "bye bye",
+        "gotta go",
+        "see ya",
+        "talk to you later",
+        "catch you later",
+        "stop"
+      ],
+      "responses": [
+        "Good luck with your prep! You've got this!",
+        "See you soon! Keep practicing.",
+        "Goodbye! Don't forget to revise your basics."
+      ]
+    },
+    {
+      "tag": "resume_help",
+      "patterns": [
+        "how to make resume",
+        "resume tips",
+        "resume kaise banau",
+        "what to include in resume",
+        "cv tips",
+        "resume advice",
+        "best resume format",
+        "how to improve my cv",
+        "ats friendly resume",
+        "resume for freshers",
+        "can you check my resume",
+        "resume building",
+        "making a professional cv",
+        "resume templates",
+        "projects in resume",
+        "how many pages for resume",
+        "resume mistakes to avoid",
+        "cv kaise banate hain",
+        "resume guide"
+      ],
+      "responses": [
+        "Keep your resume to a single page. Use the STAR method for projects and highlight measurable achievements.",
+        "Focus on relevant skills, internship experience, and GitHub links. Make sure it's ATS-friendly by using simple fonts."
+      ]
+    },
+    {
+      "tag": "dsa_preparation",
+      "patterns": [
+        "how to prepare dsa",
+        "dsa roadmap",
+        "dsa kaise start kare",
+        "is dsa important",
+        "how many questions to practice",
+        "dsa tips",
+        "important dsa topics",
+        "data structures and algorithms prep",
+        "best way to learn dsa",
+        "dsa for beginners",
+        "is dsa enough for faang",
+        "programming logic building",
+        "how to master dsa",
+        "dsa questions for placement",
+        "coding interview dsa",
+        "starting with dsa"
+      ],
+      "responses": [
+        "Start with Arrays and Strings, then move to Linked Lists, Trees, and Graphs. Don't skip Dynamic Programming!",
+        "Consistency is key. Solve at least 2-3 problems daily on LeetCode or GFG to build logic."
+      ]
+    },
+    {
+      "tag": "interview_prep",
+      "patterns": [
+        "how to prepare for interview",
+        "interview tips",
+        "how to crack interviews",
+        "last minute interview tips",
+        "interview preparation",
+        "technical interview help",
+        "what to wear for interview",
+        "mock interview",
+        "facing the interviewer",
+        "how to answer technical questions",
+        "interview fear",
+        "how to introduce myself in interview",
+        "interview experience",
+        "interview process in companies",
+        "cracking the interview"
+      ],
+      "responses": [
+        "Revise your core CS subjects (OS, DBMS, CN), practice live coding, and do at least two mock interviews.",
+        "Be clear in your communication. If you don't know an answer, explain your thought process rather than staying silent."
+      ]
+    },
+    {
+      "tag": "aptitude_prep",
+      "patterns": [
+        "aptitude preparation",
+        "how to clear aptitude round",
+        "quant and reasoning tips",
+        "aptitude roadmap",
+        "best sites for aptitude",
+        "is aptitude hard",
+        "quants help",
+        "logical reasoning for placement",
+        "mathematics for interviews",
+        "verbal ability prep",
+        "how to improve speed in aptitude",
+        "aptitude questions with answers",
+        "clearing written test",
+        "placement aptitude"
+      ],
+      "responses": [
+        "Focus on Percentages, Ratios, Time-Speed-Distance, and Logical Reasoning. IndiaBix and PrepInsta are great resources.",
+        "Aptitude is usually an elimination round. Speed and accuracy are vital, so take timed mock tests."
+      ]
+    },
+    {
+      "tag": "hr_round",
+      "patterns": [
+        "hr interview questions",
+        "tell me about yourself",
+        "how to handle hr round",
+        "why should we hire you",
+        "strengths and weaknesses",
+        "behavioral interview questions",
+        "salary expectation answer",
+        "hr round tips",
+        "difficult hr questions",
+        "how to talk to hr",
+        "hr round questions for freshers",
+        "culture fit round",
+        "why this company answer"
+      ],
+      "responses": [
+        "HR rounds check your culture fit. Prepare a solid 'Tell me about yourself' and research the company's values beforehand.",
+        "Be honest and positive. For 'Why should we hire you?', align your skills with the job description."
+      ]
+    },
+    {
+      "tag": "programming_language",
+      "patterns": [
+        "which language is best",
+        "cpp or java for placement",
+        "is python okay for interviews",
+        "best coding language",
+        "should i learn c++",
+        "java vs python for dsa",
+        "coding language for beginners",
+        "most used language in interviews",
+        "can i use python in coding round",
+        "best language for product based companies"
+      ],
+      "responses": [
+        "C++ and Java are standard for DSA due to performance and libraries. Python is great for AI/ML roles but check if the company allows it for coding rounds.",
+        "Pick one language (C++, Java, or Python) and become an expert in it. Master the syntax and STL/Collections."
+      ]
+    },
+    {
+      "tag": "interview_concepts",
+      "patterns": [
+        "what is star method",
+        "star interview method",
+        "behavioral interview technique",
+        "how to answer using star"
+      ],
+      "responses": [
+        "STAR stands for Situation, Task, Action, Result. It's used to answer behavioral interview questions clearly."
+      ]
+    }
+  ]
+}
