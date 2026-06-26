@@ -234,6 +234,21 @@
       "responses": [
         "STAR stands for Situation, Task, Action, Result. It's used to answer behavioral interview questions clearly."
       ]
-    }
+    },
+    {
+    "tag": "followup",
+    "patterns": [
+        "what about that",
+        "tell me more",
+        "and then",
+        "what next",
+        "can you explain more",
+        "what should i do",
+        "how about it"
+    ],
+    "responses": [
+        "followup"
+    ]
+}
   ]
 }

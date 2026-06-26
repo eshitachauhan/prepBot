@@ -17,6 +17,10 @@ nlp = spacy.load("en_core_web_sm")
 embed_model = SentenceTransformer('all-MiniLM-L6-v2')
 spell = SpellChecker()
 
+conversation_context = {
+    "last_intent": None
+}
+
 custom_words = ['dsa', 'cv', 'api', 'ml', 'hr']
 spell.word_frequency.load_words(custom_words)
 
@@ -76,6 +80,19 @@ pattern_vectors = vectorizer.transform(all_patterns)
 pattern_embeddings = embed_model.encode(all_patterns)
 
 def get_response(user_input):
+    
+    followup_phrases = ["tell me more", "more", "what next", "and then", "continue", "go on"]
+    
+    if user_input.lower().strip() in followup_phrases:
+        if conversation_context["last_intent"]:
+    
+            chosen_tag = conversation_context["last_intent"]
+            conversation_context["last_intent"] = chosen_tag
+
+            for intent in data["intents"]:
+                if intent["tag"] == chosen_tag:
+                    return "Continuing from earlier: " + random.choice(intent["responses"])
+
     corrected_input = correct_spelling(user_input)
     print(f"[DEBUG] original: {user_input}")
     print(f"[DEBUG] corrected: {corrected_input}")
@@ -110,7 +127,8 @@ def get_response(user_input):
             chosen_tag = all_tags[best_index]
         else:
             return "I didn’t quite get that. Try asking about resumes, DSA, or interviews."
-
+        
+    conversation_context["last_intent"] = chosen_tag
     
     for intent in data['intents']:
         if intent['tag'] == chosen_tag:
